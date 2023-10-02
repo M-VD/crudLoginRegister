@@ -1,0 +1,46 @@
+describe("test create route", () => {
+  const todo = {
+    title: "Create todo",
+  };
+
+  test("Should have key record and msg when created", async () => {
+    const mockCreateTodo = jest.fn((): any => todo);
+    jest
+      .spyOn(TodoInstance, "create")
+      .mockImplementation(() => mockCreateTodo());
+
+    const res = await request(app).post("/api/v1/create").send(todo);
+
+    expect(mockCreateTodo).toHaveBeenCalledTimes(1);
+    expect(res.body).toHaveProperty("msg");
+    expect(res.body).toHaveProperty("record");
+  });
+
+  test("Should handle exception", async () => {
+    const mockCreateTodo = jest.fn((): any => {
+      throw "error";
+    });
+    jest
+      .spyOn(TodoInstance, "create")
+      .mockImplementation(() => mockCreateTodo());
+
+    const res = await request(app).post("/api/v1/create").send(todo);
+
+    expect(mockCreateTodo).toHaveBeenCalledTimes(1);
+    expect(res.body).toEqual({
+      msg: "fail to create",
+      status: 500,
+      route: "/create",
+    });
+  });
+
+  test("Should handle request param", async () => {
+    const res = await request(app).post("/api/v1/create").send({});
+
+    expect(res.body).toEqual({
+      msg: "The title value should not be empty",
+      param: "title",
+      location: "body",
+    });
+  });
+});

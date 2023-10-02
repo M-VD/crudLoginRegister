@@ -1,0 +1,121 @@
+
+  /*
+    it('should return a 404 when product is not found', async () => {
+      const productId = 'product-123'
+
+      const { body, statusCode } = await supertest(app).get(
+        `/api/products/${productId}`
+      )
+
+      expect(statusCode).toBe(401)
+    })
+
+    
+
+  describe('given the product does exist', () => {
+    it('should return a 200 status and create the product', async () => {
+          const jwt = signJwtAccess(userPayload)
+   
+
+      const { body, statusCode } = await supertest(app).post(
+        `/api/products/`
+      ).send(productPayload)
+
+      expect(statusCode).toBe(200)
+
+      expect(body).toBe(productPayload)
+    })
+/*
+ it('should return a 200 status and create the product', async () => {
+          const jwt = signJwtAccess(userPayload)
+   
+
+      const { body, statusCode } = await supertest(app).get(
+        `/api/products/${product.Id}`
+      )
+
+      expect(statusCode).toBe(200)
+
+      expect(body.productId).toBe(product.Id)
+    })
+
+
+
+    /*
+    it('should return a 200 status and get the products', async () => {
+      const jwt = signJwtAccess(userPayload)
+      
+      const { body, statusCode } = await supertest(app).get(`/api/products`).set('Authorization', `Bearer ${jwt}`)
+      
+      console.log(body)
+      expect(statusCode).toBe(200)
+    })
+
+    it('should return a 200 status and the product', async () => {
+      // @ts-ignore
+
+      const product = await findProduct(productPayload)
+
+      const { body, statusCode } = await supertest(app).put(
+        `/api/products/${product?.productId}`
+      )
+
+      expect(statusCode).toBe(200)
+
+      expect(body.productId).toBe(product?.productId)
+    })
+    it('should return a 200 status and the product', async () => {
+            const jwt = signJwtAccess(userPayload)
+      // @ts-ignore
+
+      const product = await findAndUpdateProduct(productPayload)
+
+      const { body, statusCode } = await supertest(app).delete(
+        `/api/products/${product?.productId}`
+      )
+
+      expect(statusCode).toBe(200)
+
+      expect(body.productId).toBe(product?.productId)
+    })
+
+    it('should return a 200 status and delete product', async () => {
+            const jwt = signJwtAccess(userPayload)
+      
+      // @ts-ignore
+      const product = await findProduct(productPayload)
+      // @ts-ignore
+      await deleteProduct(product)
+
+      const { body, statusCode } = await supertest(app).get(
+        `/api/products/${product?.productId}`
+      )
+
+      expect(statusCode).toBe(404)
+
+      expect(body).not.toBe(product)
+    })
+    */
+  /*
+    it('should return a 200 and login the user', async () => {
+      const jwt = signJwtAccess(userPayload)
+      const code = `
+ console.log('${jwt}');
+`
+      const parsed = parseWithComments(code)
+      console.log(parsed)
+      const { statusCode, body } = await supertest(app)
+        .post('/api/products')
+        .set('Authorization', `Bearer ${jwt}`)
+        .send(loginPayload)
+
+      expect(statusCode).toBe(200)
+
+      expect(body).toEqual({
+        accessToken: expect.any(String),
+
+        refreshToken: expect.any(String),
+        // productId: expect.any(String),
+      })
+    })
+  })*/
