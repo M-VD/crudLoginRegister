@@ -1,0 +1,219 @@
+{
+  "products": [
+    {
+      "title": "aaa",
+      "description": "aaaa",
+      "price": 0,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "ggg",
+      "description": "eettt",
+      "price": 54
+    },
+    {
+      "title": "ff",
+      "description": "ff",
+      "price": null,
+      "id": 3
+    },
+    {
+      "title": "uuu",
+      "description": "uuu",
+      "price": 55,
+      "id": 4
+    },
+    {
+      "title": "ii",
+      "description": "uu",
+      "price": 5,
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "zzzzzzzzzzz",
+      "firstName": "zzzzzzzzzzz",
+      "lastName": "aaaaaaaaaaaa",
+      "password": "Super123!",
+      "id": 1
+    },
+    {
+      "email": "jj",
+      "password": "jjj",
+      "passwordConfirmation": "jjj",
+      "firstName": "jjj",
+      "lastName": "jjj",
+      "id": 2
+    },
+    {
+      "email": "jj",
+      "password": "jjj",
+      "passwordConfirmation": "jjj",
+      "firstName": "jjj",
+      "lastName": "jjj",
+      "id": 3
+    },
+    {
+      "email": "jj",
+      "password": "jjj",
+      "passwordConfirmation": "jjj",
+      "firstName": "jjj",
+      "lastName": "jjj",
+      "id": 4
+    },
+    {
+      "email": "jj",
+      "password": "jjj",
+      "passwordConfirmation": "jjj",
+      "firstName": "jjj",
+      "lastName": "jjj",
+      "id": 5
+    },
+    {
+      "email": "jj",
+      "password": "jjj",
+      "passwordConfirmation": "jjj",
+      "firstName": "jjj",
+      "lastName": "jjj",
+      "id": 6
+    },
+    {
+      "email": "jj",
+      "password": "jjj",
+      "passwordConfirmation": "jjj",
+      "firstName": "jjj",
+      "lastName": "jjj",
+      "id": 7
+    },
+    {
+      "email": "yy",
+      "password": "yyy",
+      "passwordConfirmation": "yy",
+      "firstName": "yy",
+      "lastName": "yy",
+      "id": 8
+    },
+    {
+      "email": "yy",
+      "password": "yy",
+      "passwordConfirmation": "yy",
+      "firstName": "yy",
+      "lastName": "yy",
+      "id": 9
+    },
+    {
+      "email": "ff",
+      "password": "ff",
+      "passwordConfirmation": "fff",
+      "firstName": "ff",
+      "lastName": "ff",
+      "id": 10
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "passwordConfirmation": "ff",
+      "firstName": "ff",
+      "lastName": "dd",
+      "id": 11
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 12
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 13
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 14
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 15
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 16
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 17
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 18
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 19
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 20
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 21
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 22
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 23
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 24
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 25
+    },
+    {
+      "email": "ss",
+      "password": "ff",
+      "id": 26
+    }
+  ],
+  "sessions": [
+    {
+      "email": "dddddddd",
+      "password": "xxxxxv14",
+      "id": 1
+    },
+    {
+      "email": "yyyttt",
+      "firstName": "uuuuu",
+      "lastName": "uuuuu",
+      "password": "Super123!",
+      "id": 2
+    }
+  ],
+  "refresh": [
+    {
+      "headers": {
+        "Authorization": "Bearer my-token"
+      }
+    }
+  ]
+}
